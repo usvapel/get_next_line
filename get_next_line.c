@@ -18,7 +18,7 @@ static void	*ft_memcpy(char *dest, const char *src, size_t n)
 		return ;
 	while (n--)
 		*dest++ = *src++;
-	return ;
+	return (dest);
 }
 
 static int	read_to_buffer(char *buffer, int fd)
