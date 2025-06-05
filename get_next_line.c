@@ -14,9 +14,11 @@
 
 static void	*ft_memcpy(char *dest, const char *src, size_t n)
 {
+	if (!dest || !src)
+		return ;
 	while (n--)
 		*dest++ = *src++;
-	return (dest);
+	return ;
 }
 
 static int	read_to_buffer(char *buffer, int fd)
