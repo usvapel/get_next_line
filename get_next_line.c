@@ -15,7 +15,7 @@
 static void	*ft_memcpy(char *dest, const char *src, size_t n)
 {
 	if (!dest || !src)
-		return ;
+		return (NULL);
 	while (n--)
 		*dest++ = *src++;
 	return (dest);
